@@ -14,11 +14,3 @@ installDir="$pkgDir/installs"
 
 appServicesDir=/etc/init.d
 servicesDir=$appServicesDir/services
-
-# INSTALL $daemon AS A SERVICE
-echo $setupName EXECUTING: . ./installs/addAppServices.sh
-. ./installs/addAppServices.sh
-
-# START $daemon SERVICE
-echo $setupName EXECUTING: . ./installs/startAppServices.sh
-. ./installs/startAppServices.sh
