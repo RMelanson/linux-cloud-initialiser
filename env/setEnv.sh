@@ -6,7 +6,6 @@ gitRepo="linux-scripts-cloud-initialiser"
 
 #SET UP INSTALLATION DIRECTORY
 pkg=CLOUD_INITIALISER
-daemon=$pkg
 scriptType="apps"
 progType="jars"
 parentDir="/tmp/scripts/$scriptType"
@@ -15,3 +14,11 @@ installDir="$pkgDir/installs"
 
 appServicesDir=/etc/init.d
 servicesDir=$appServicesDir/services
+
+# INSTALL $daemon AS A SERVICE
+echo $setupName EXECUTING: . ./installs/addAppServices.sh
+. ./installs/addAppServices.sh
+
+# START $daemon SERVICE
+echo $setupName EXECUTING: . ./installs/startAppServices.sh
+. ./installs/startAppServices.sh
