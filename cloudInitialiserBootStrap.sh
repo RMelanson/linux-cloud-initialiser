@@ -25,7 +25,7 @@ yum install git -y
 
 # SETUP ENVIRONMENT AND PARAMETERS
 pkg=APP_SERVICES
-gitRepo="linux-scripts-app-services.git"
+gitRepo="linux-scripts-cloud-initialiser.git"
 installDir="/tmp/scripts/utils/$pkg"
 
 if [ -f ~/.ssh/gitHub.key ]; then
