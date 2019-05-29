@@ -1,9 +1,8 @@
 #!/bin/bash
 bootstrapDir=$PWD
-bootstrap=$bootstrapDir/cloudIntegrationBootStrap.sh
 
-# Ensure script is running under root
-if [ "$EUID" -ne 0 ]
+# Ensure script is running under 
+if [ "$EUID" -ne 0 
 then
    sudo -n true 2/dev/null 2>&1
    passwordRequired=$?
