@@ -14,6 +14,10 @@ echo $setupName EXECUTING: . ./installs/addAppServices.sh
 echo $setupName EXECUTING: . ./installs/addAppServices.sh
 . ./installs/setRecovery.sh
 
-# START $daemon SERVICE
-echo $setupName EXECUTING: . ./installs/startAppServices.sh
-. ./installs/startAppServices.sh
+# ADD CLOUD_SERVICE SERVICE
+echo $setupName EXECUTING: . ./installs/addCloudInitialiserService.sh
+. ./installs/addCloudInitialiserService.sh
+
+# START CLOUD_SERVICE SERVICE
+echo $setupName EXECUTING: . ./installs/startCloudInitialiserService.sh
+. ./installs/startCloudInitialiserService.sh
