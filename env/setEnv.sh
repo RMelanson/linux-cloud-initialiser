@@ -6,6 +6,7 @@ gitRepo="linux-scripts-cloud-initialiser"
 
 #SET UP INSTALLATION DIRECTORY
 pkg=CLOUD_INITIALISER
+daemon=$pkg
 scriptType="apps"
 progType="jars"
 parentDir="/tmp/scripts/$scriptType"
