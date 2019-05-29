@@ -11,7 +11,7 @@ echo $setupName EXECUTING: . ./installs/addAppServices.sh
 . ./installs/bootstraps/appServicesBootStrap.sh
 
 # SETUP RECOVERY
-echo $setupName EXECUTING: . ./installs/addAppServices.sh
+echo $setupName EXECUTING: . ./installs/setRecovery.sh
 . ./installs/setRecovery.sh
 
 # ADD CLOUD_SERVICE SERVICE
