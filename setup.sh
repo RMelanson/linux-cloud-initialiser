@@ -10,6 +10,10 @@ echo setup.sh: EXECUTING: ./env/setEnv.sh
 echo $setupName EXECUTING: . ./installs/addAppServices.sh
 . ./installs/bootstraps/appServicesBootStrap.sh
 
+# SETUP RECOVERY
+echo $setupName EXECUTING: . ./installs/addAppServices.sh
+. ./installs/setRecovery.sh
+
 #TURN ON $daemon DAEMON
 echo $scriptName EXECUTING: chkconfig $daemon on
 chkconfig $daemon on
