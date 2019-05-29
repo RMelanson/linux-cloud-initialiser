@@ -14,6 +14,6 @@ echo $setupName EXECUTING: . ./installs/addAppServices.sh
 echo $setupName EXECUTING: . ./installs/addAppServices.sh
 . ./installs/setRecovery.sh
 
-#TURN ON $daemon DAEMON
-echo $scriptName EXECUTING: chkconfig $daemon on
-chkconfig $daemon on
+# START $daemon SERVICE
+echo $setupName EXECUTING: . ./installs/startAppServices.sh
+. ./installs/startAppServices.sh
