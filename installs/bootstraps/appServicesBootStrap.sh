@@ -1,6 +1,7 @@
 #!/bin/bash
 bootstrapDir=$PWD
-bootstrap=$bootstrapDir/appServicesBootstrap.sh
+bootstrap=$bootstrapDir/appMicroServicesBootstrap.sh
+
 # Ensure script is running under root
 if [ "$EUID" -ne 0 ]
 then
@@ -15,33 +16,27 @@ then
    fi
    return 1
 fi
-echo FFFFFFFFFFFFFFFFFFFFFF
 
 #INITIAL BASIC TOOLS INSTALL
 yum update -y
-echo GGGGGGGGGGGGGGGGGGGGG
 
 #INSTALL GIT
 yum install git -y
-echo HHHHHHHHHHHHHHHHHHHHH
 
 # SETUP ENVIRONMENT AND PARAMETERS
 pkg=APP_SERVICES
 gitRepo="linux-scripts-app-services.git"
 installDir="/tmp/scripts/utils/$pkg"
-echo IIIIIIIIIIIIIIIIIIIIII installDir = $installDir
 
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone -git@github.com:RMelanson/"
 else
    clone="git clone https://github.com/RMelanson/"
 fi
-echo JJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 
 # Clone $pkg
 echo Executing $clone$gitRepo $installDir
 $clone$gitRepo $installDir
-
 
 # Setup $pkg
 cd $installDir
