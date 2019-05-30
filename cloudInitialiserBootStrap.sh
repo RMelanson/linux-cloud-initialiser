@@ -16,12 +16,6 @@ then
    return 1
 fi
 
-#INITIAL BASIC TOOLS INSTALL
-yum update -y
-
-#INSTALL GIT
-yum install git -y
-
 # SETUP ENVIRONMENT AND PARAMETERS
 pkg=APP_SERVICES
 gitRepo="linux-scripts-cloud-initialiser.git"
