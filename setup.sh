@@ -6,8 +6,8 @@ echo $setupName: EXECUTING: . ./env/setEnv.sh
 
 # SETUP RECOVERY
 
-# INSTALL $daemon AS A SERVICE
-echo $setupName EXECUTING: . ./installs/addAppServices.sh
+# INSTALL APPS_SERVICE DAEMON
+echo "$setupName EXECUTING: ./installs/addAppServices.sh"
 ./installs/bootstraps/appServicesBootStrap.sh
 
 # SETUP RECOVERY
