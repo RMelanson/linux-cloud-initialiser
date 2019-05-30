@@ -2,7 +2,7 @@
 bootstrapDir=$PWD
 
 # Ensure script is running under 
-if [ "$EUID" -ne 0 
+if [ "$EUID" -ne 0 ]
 then
    sudo -n true 2/dev/null 2>&1
    passwordRequired=$?
