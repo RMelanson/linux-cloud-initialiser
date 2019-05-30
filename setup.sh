@@ -1,14 +1,12 @@
 #! /bin/bash
 setupName=setup.sh:
 # SETUP THE REQUIRED ENVIRONMENT
-echo AAAAAAAAAAAAAAAAAAAAAAA
 echo $setupName: EXECUTING: . ./env/setEnv.sh
 . ./env/setEnv.sh
 
 # SETUP RECOVERY  --- TO DO (FIX) ---
-echo BBBBBBBBBBBBBBBBBBBBBBB
-#echo $setupName EXECUTING: . ./installs/setRecovery.sh
-#. ./installs/setRecovery.sh
+echo $setupName EXECUTING: . ./installs/setRecovery.sh
+. ./installs/setRecovery.sh
 
 # INSTALL APPS_SERVICE DAEMON
 echo CCCCCCCCCCCCCCCCCCCCCCC
