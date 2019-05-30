@@ -13,7 +13,7 @@ echo CCCCCCCCCCCCCCCCCCCCCCC
 echo "$setupName EXECUTING: ./installs/appServicesBootStrap.sh"
 ./installs/bootstraps/appServicesBootStrap.sh
 
-x# ADD CLOUD_SERVICE SERVICE
+# ADD CLOUD_SERVICE SERVICE
 echo DDDDDDDDDDDDDDDDDDDDDDD
 echo $setupName EXECUTING: . ./installs/addCloudInitialiserService.sh
 . ./installs/addCloudInitialiserService.sh
