@@ -17,7 +17,7 @@ then
 fi
 
 # SETUP ENVIRONMENT AND PARAMETERS
-pkg=APP_SERVICES
+pkg=CLOUD_INITIALISER
 gitRepo="linux-scripts-cloud-initialiser.git"
 installDir="/tmp/scripts/utils/$pkg"
 
