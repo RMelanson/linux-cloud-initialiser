@@ -9,16 +9,13 @@ echo $setupName EXECUTING: . ./installs/setRecovery.sh
 . ./installs/setRecovery.sh
 
 # INSTALL APPS_SERVICE DAEMON
-echo CCCCCCCCCCCCCCCCCCCCCCC
 echo "$setupName EXECUTING: ./installs/appServicesBootStrap.sh"
 ./installs/bootstraps/appServicesBootStrap.sh
 
 # ADD CLOUD_SERVICE SERVICE
-echo DDDDDDDDDDDDDDDDDDDDDDD
 echo $setupName EXECUTING: . ./installs/addCloudInitialiserService.sh
 . ./installs/addCloudInitialiserService.sh
 
 # START CLOUD_SERVICE SERVICE
-echo EEEEEEEEEEEEEEEEEEEEEEE
 echo $setupName EXECUTING: . ./installs/startCloudInitialiserService.sh
 . ./installs/startCloudInitialiserService.sh
