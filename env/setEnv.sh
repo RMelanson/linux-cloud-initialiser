@@ -15,3 +15,4 @@ installDir="$pkgDir/installs"
 appServicesDir=/etc/init.d
 servicesDir=$appServicesDir/services
 jobsDir=$servicesDir/jobs/$scriptType/$progType
+serverPort="-Dserver.port=9090"
