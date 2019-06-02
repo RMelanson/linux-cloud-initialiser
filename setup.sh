@@ -1,7 +1,6 @@
 #! /bin/bash
-setupName=setup.sh:
-# SETUP THE REQUIRED ENVIRONMENT
-echo $setupName: EXECUTING: . ./env/setEnv.sh
+setupName=setup.sh
+echo "$setupName: EXECUTING: . ./env/setEnv.sh $*"
 . ./env/setEnv.sh $*
 
 # SETUP RECOVERY  --- TO DO (FIX) ---
