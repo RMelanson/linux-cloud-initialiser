@@ -12,8 +12,8 @@ parentDir="/tmp/scripts/$scriptType"
 pkgDir="$parentDir/$pkg"
 installDir="$pkgDir/installs"
 
-appServicesDir=/etc/init.d
+#appServicesDir=/etc/init.d
+appServicesDir=/opt/CI
 servicesDir=$appServicesDir/services
-servicesDir=/opt/CI/services
 jobsDir=$servicesDir/jobs/$scriptType/$progType
 serverPort="-Dserver.port=9090"
