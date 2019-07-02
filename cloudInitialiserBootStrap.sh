@@ -21,10 +21,12 @@ pkg=CLOUD_INITIALISER
 gitRepo="linux-scripts-cloud-initialiser.git"
 installDir="/tmp/scripts/apps/$pkg"
 
+get="git clone --recurse-submodules -j8"
+
 if [ -f ~/.ssh/gitHub.key ]; then
-   clone="git clone -git@github.com:RMelanson/"
+   clone="$git git@github.com:RMelanson/"
 else
-   clone="git clone https://github.com/RMelanson/"
+   clone="$git https://github.com/RMelanson/"
 fi
 
 # Clone $pkg
