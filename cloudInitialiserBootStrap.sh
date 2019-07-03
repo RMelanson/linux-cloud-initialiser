@@ -31,17 +31,17 @@ fi
 
 # Clone $pkg
 clone="$git $prototype$gitRepo $installDir"
-echo Executing $clone
 $clone
 
 # Setup $pkg
 cd $installDir
+echo Executed $clone | tee setup.log
 
 # MAKE ALL SHELL SCRIPTS EXECUTABLE TO ROOT ONLY
 find . -name "*.sh" -exec chmod 700 {} \;
 
 # Setup Project
 echo "BOOTSTRAP EXECUTING: ./setup.sh $* 2>&1| tee setup.log"
-./setup.sh $* 2>&1| tee setup.log
+./setup.sh $* 2>&1| tee -a setup.log
 
 cd $bootstrapDir
