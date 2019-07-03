@@ -1,0 +1,3 @@
+[submodule "installs/submodules/APP_SERVICES"]
+	path = installs/submodules/APP_SERVICES
+	url = git@github.com:RMelanson/linux-scripts-app-services.git
