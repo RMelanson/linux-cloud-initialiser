@@ -5,6 +5,10 @@ setupName=setup.sh:
 echo "$setupName: EXECUTING: . ./env/setEnv.sh $*"
 . ./env/setEnv.sh $*
 
+# UPDATE SUB_MODUAL  
+echo $setupName EXECUTING: submodule update --init
+git submodule update --init
+ 
 # SETUP RECOVERY  --- TO DO (FIX) ---
 echo $setupName EXECUTING: . ./installs/setRecovery.sh
 . ./installs/setRecovery.sh
