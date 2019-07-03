@@ -1,3 +1,6 @@
-[submodule "installs/submodules/APP_SERVICES"]
-	path = installs/submodules/APP_SERVICES
+[submodule "installs/subModules/APP_SERVICES"]
+	path = installs/subModules/APP_SERVICES
 	url = git@github.com:RMelanson/linux-scripts-app-services.git
+[submodule "installs/subModules/SPRINGBOOT_CLOUD_INITIALISER"]
+	path = installs/subModules/SPRINGBOOT_CLOUD_INITIALISER
+	url = git@github.com:RMelanson/java-springboot-cloud-initialiser-jsp.git
