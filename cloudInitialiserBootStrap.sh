@@ -24,14 +24,15 @@ installDir="/tmp/scripts/apps/$pkg"
 get="git clone --recurse-submodules -j8"
 
 if [ -f ~/.ssh/gitHub.key ]; then
-   clone="$git git@github.com:RMelanson/"
+   prototype="git@github.com:RMelanson/"
 else
-   clone="$git https://github.com/RMelanson/"
+   prototype="https://github.com/RMelanson/"
 fi
 
 # Clone $pkg
-echo Executing $clone$gitRepo $installDir
-$clone$gitRepo $installDir
+clone="$git $prototype$gitRepo $installDir"
+echo Executing $clone
+$clone
 
 # Setup $pkg
 cd $installDir
