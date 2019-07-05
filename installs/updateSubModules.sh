@@ -1,5 +1,9 @@
-echo "$setupName: EXECUTING: . ./env/setEnv.sh $*"
+setupName=updateSubModules.sh
+echo "$setupName EXECUTING: . ./env/setEnv.sh $*"
 . ./env/setEnv.sh $*
+
+echo "$setupName EXECUTING: git submodule update --init"
+git submodule update --init
 
 #ToDo 
 # For Each Module in Directory $modulesDir
