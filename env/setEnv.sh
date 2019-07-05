@@ -11,6 +11,7 @@ progType="jars"
 parentDir="/tmp/scripts/$scriptType"
 pkgDir="$parentDir/$pkg"
 installDir="$pkgDir/installs"
+modulesDir="$installDir/subModules"
 
 #appServicesDir=/etc/init.d
 appServicesDir=/opt/CI
