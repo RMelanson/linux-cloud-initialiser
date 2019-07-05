@@ -3,7 +3,7 @@
 # SETUP THE ENVIRONMENT
 setupName=setup.sh:
 echo $setupName EXECUTING: . ./installs/updateModules.sh
-. ./installs/updateModules.sh
+. ./installs/updateSubModules.sh
 
 # UPDATE SUB_MODUAL  
 echo $setupName EXECUTING: submodule update --init
