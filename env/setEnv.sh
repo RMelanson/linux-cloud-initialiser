@@ -14,7 +14,8 @@ installDir="$pkgDir/installs"
 modulesDir="$installDir/subModules"
 
 #appServicesDir=/etc/init.d
-appServicesDir=/opt/CI
+CIDir=/opt/CI
+appServicesDir=$CIDir/services
 servicesDir=$appServicesDir/services
 jobsDir=$servicesDir/jobs/$scriptType/$progType
 serverPort="-Dserver.port=9090"
