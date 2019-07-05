@@ -21,7 +21,7 @@ pkg=CLOUD_INITIALISER
 gitRepo="linux-scripts-cloud-initialiser.git"
 installDir="/tmp/scripts/apps/$pkg"
 
-get="git clone --recurse-submodules -j8"
+git="git clone --recurse-submodules -j8"
 
 if [ -f ~/.ssh/gitHub.key ]; then
    prototype="git@github.com:RMelanson/"
