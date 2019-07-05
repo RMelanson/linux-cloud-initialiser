@@ -2,8 +2,8 @@
 
 # SETUP THE ENVIRONMENT
 setupName=setup.sh:
-echo "$setupName: EXECUTING: . ./env/setEnv.sh $*"
-. ./env/setEnv.sh $*
+echo $setupName EXECUTING: . ./installs/updateModules.sh
+. ./installs/updateModules.sh
 
 # UPDATE SUB_MODUAL  
 echo $setupName EXECUTING: submodule update --init
