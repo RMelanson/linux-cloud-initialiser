@@ -5,7 +5,7 @@ bootstrap="cloudInitialiserBootStrap.sh"
 gitRepo="linux-scripts-cloud-initialiser"
 
 #SET UP INSTALLATION DIRECTORY
-daemon=daemon=/cloudInit.sh
+daemon=daemon=/cloudInit
 pkg=CLOUD_INITIALISER
 scriptType="apps"
 progType="jars"
