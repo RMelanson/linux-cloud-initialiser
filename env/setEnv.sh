@@ -14,7 +14,6 @@ pkgDir="$parentDir/$pkg"
 installDir="$pkgDir/installs"
 modulesDir="$installDir/subModules"
 
-#appServicesDir=/etc/init.d
 ciDir=/opt/CI
 appServicesDir=$CIDir/services
 servicesDir=$appServicesDir/services
